@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts - Muhammad Abdullah</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #0d0f13;
+      color: #fff;
+    }
+
+    /* Header / Navbar */
+    header {
+      background: #e23744;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    main.contact-section {
+      flex: 1;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    main.contact-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #e23744;
+    }
+
+    .contact-info {
+      background: #222;
+      padding: 20px 40px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #e23744;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Muhammad Abdullah</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contacts.html" class="active">Contacts</a></li>
+    </ul>
+  </header>
+
+  <main class="contact-section">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out to me:</p>
+    <div class="contact-info">
+      <p><strong>📞 Phone:</strong> +92 3133592052</p>
+      <p><strong>📧 Email:</strong> abdullahmuhmmad606@gmail.com</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Muhammad Abdullah | All Rights Reserved
+  </footer>
+</body>
+</html>
