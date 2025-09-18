@@ -56,6 +56,7 @@ header nav ul li a.active {
   padding: 60px;
   background: #1a1a1a; /* dark grey */
   border-bottom: 2px solid #e23744;
+  gap: 30px;
 }
 
 .about-content {
@@ -152,4 +153,75 @@ footer {
   padding: 20px;
   font-size: 14px;
   letter-spacing: 0.5px;
+}
+
+/* ===============================
+   Responsive Design
+================================== */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+  }
+  header nav ul {
+    gap: 18px;
+  }
+  .about-section {
+    padding: 40px;
+  }
+  .about-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about-content {
+    padding-right: 0;
+  }
+  .about-content h1 {
+    font-size: 26px;
+  }
+  .mission {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 18px;
+  }
+  .about-section {
+    padding: 25px 15px;
+  }
+  .about-content h1 {
+    font-size: 22px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .mission-box h2 {
+    font-size: 18px;
+  }
+  .mission-box .hidden-text {
+    font-size: 13px;
+  }
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
 }

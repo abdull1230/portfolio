@@ -22,6 +22,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap; /* ✅ allow wrap on small devices */
 }
 
 header .logo {
@@ -52,6 +53,7 @@ header ul li a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 100px 60px;
+  gap: 40px;
 }
 
 .hero-text h2 {
@@ -81,6 +83,7 @@ header ul li a:hover {
 .buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn-primary {
@@ -143,6 +146,8 @@ header ul li a:hover {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap; /* ✅ wrap on small screens */
+  gap: 20px;
 }
 
 .service {
@@ -150,6 +155,7 @@ header ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   width: 30%;
+  min-width: 250px;
 }
 
 .service h3 {
@@ -178,6 +184,8 @@ header ul li a:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  flex-wrap: wrap; /* ✅ wrap on mobile */
+  gap: 20px;
 }
 
 .stats div h3 {
@@ -187,4 +195,106 @@ header ul li a:hover {
 
 .stats div p {
   color: #bbb;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text h3 {
+    font-size: 24px;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text h3 {
+    font-size: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, 
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hero-img img {
+    width: 180px;
+  }
+
+  .skills ul li {
+    font-size: 16px;
+  }
+
+  .stats div h3 {
+    font-size: 22px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+  }
+
+  .about p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
 }
