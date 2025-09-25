@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacts - Muhammad Abdullah</title>
-  <link rel="stylesheet" href="contact.css">
-  <!-- <style>
-    /* Reset */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -132,31 +123,3 @@ footer {
 }
 
 }
-
-  </style> -->
-</head>
-<body>
-  <header>
-    <div class="logo">Muhammad Abdullah</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About us</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contacts.html">Contacts</a></li>
-    </ul>
-  </header>
-
-  <main class="contact-section">
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out to me:</p>
-    <div class="contact-info">
-      <p><strong>📞 Phone:</strong> +92 3133592052</p>
-      <p><strong>📧 Email:</strong> abdullahmuhmmad606@gmail.com</p>
-    </div>
-  </main>
-
-  <footer>
-    © 2025 Muhammad Abdullah | All Rights Reserved
-  </footer>
-</body>
-</html>
