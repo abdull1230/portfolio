@@ -7,8 +7,8 @@
 }
 
 body {
-  background: #0d0d0d; /* black background */
-  color: #eaeaea; /* light text */
+  background: #0d0d0d; 
+  color: #eaeaea; 
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e23744; /* red header */
+  background: #e23744;
   padding: 15px 60px;
 }
 

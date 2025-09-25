@@ -155,14 +155,15 @@ body > div:last-child {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
     padding: 15px 20px;
+    text-align: center;
   }
   header ul {
     flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    gap: 8px;
+    /* align-items: center; */
   }
   main h1 {
     font-size: 1.8rem;
